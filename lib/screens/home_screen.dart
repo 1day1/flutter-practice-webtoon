@@ -63,7 +63,6 @@ class HomeScreen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
       itemBuilder: (context, index) {
         var webtoon = snapshot.data![index];
-        logger.d(webtoon.title);
         return Webtoon(
           title: webtoon.title,
           thumb: webtoon.thumb,
